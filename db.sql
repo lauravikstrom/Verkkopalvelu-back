@@ -1,6 +1,6 @@
-CREATE DATABASE testiprojekti;
+CREATE DATABASE projektitietokanta;
 
-USE testiprojekti;
+USE projektitietokanta;
 
 /* TUOTERYHMÄ */
 
