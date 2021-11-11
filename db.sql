@@ -36,19 +36,19 @@ INSERT INTO tuote VALUES (1,'Leijona',25.00,6.00,13) ;
 INSERT INTO tuote VALUES (2,'Kissa',28.00,14.50,11) ;
 INSERT INTO tuote VALUES (3,'Lehmä',27.00,19.60,11) ;
 INSERT INTO tuote VALUES (4,'Koira',26.00,12.30,11) ;
-INSERT INTO tuote VALUES (5,'Elefantti1',22.00,7.40,13) ;
+INSERT INTO tuote VALUES (5,'Elefantti',22.00,7.40,13) ;
 INSERT INTO tuote VALUES (6,'Elefantti2',31.00,24.85,13) ;
 INSERT INTO tuote VALUES (7,'Elefantti3',23.00,NULL,13) ;
-INSERT INTO tuote VALUES (8,'Metsä',16.00,3.80,12) ;
+INSERT INTO tuote VALUES (8,'Metsä',16.00,3.80,14) ;
 INSERT INTO tuote VALUES (9,'Vuohi',16.00,3.80,11) ;
 INSERT INTO tuote VALUES (10,'Hevonen',16.00,3.80,11) ;
-INSERT INTO tuote VALUES (11,'Hevonentumma',16.00,3.80,13) ;
-INSERT INTO tuote VALUES (12,'Järvi',26.00,5.80,12) ;
-INSERT INTO tuote VALUES (13,'Vuoret',26.00,5.80,12) ;
-INSERT INTO tuote VALUES (14,'Pöllöt',26.00,5.80,13) ;
+INSERT INTO tuote VALUES (11,'Hevonen2',16.00,3.80,13) ;
+INSERT INTO tuote VALUES (12,'Järvi',26.00,5.80,14) ;
+INSERT INTO tuote VALUES (13,'Vuoret',26.00,5.80,14) ;
+INSERT INTO tuote VALUES (14,'Pöllö',26.00,5.80,13) ;
 INSERT INTO tuote VALUES (15,'Lammas',26.00,5.80,11) ;
 INSERT INTO tuote VALUES (16,'Joutsen',26.00,5.80,13) ;
-INSERT INTO tuote VALUES (17,'Puut',26.00,5.80,12) ;
+INSERT INTO tuote VALUES (17,'Puut',26.00,5.80,14) ;
 INSERT INTO tuote VALUES (18,'Kilpikonna',12.00,5.80,13) ;
 
 
