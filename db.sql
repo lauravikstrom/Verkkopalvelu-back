@@ -13,9 +13,10 @@ CONSTRAINT tuoteryhma_pk PRIMARY KEY (trnro)
 INSERT INTO tuoteryhma VALUES (11,'Piirrustukset');
 INSERT INTO tuoteryhma VALUES (12,'Maalaukset');
 INSERT INTO tuoteryhma VALUES (13,'Valokuvat');
-INSERT INTO tuoteryhma VALUES (14,'Tarvikkeet');
-INSERT INTO tuoteryhma VALUES (15,'Suositut');
-INSERT INTO tuoteryhma VALUES (16,'Tarjoukset');
+INSERT INTO tuoteryhma VALUES (14,'Illustrointi');
+INSERT INTO tuoteryhma VALUES (15,'Tarvikkeet');
+INSERT INTO tuoteryhma VALUES (16,'Suositut');
+INSERT INTO tuoteryhma VALUES (17,'Tarjoukset');
 
 /* TUOTE */
 
