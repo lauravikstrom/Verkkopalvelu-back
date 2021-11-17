@@ -4,6 +4,8 @@ USE projektitietokanta;
 
 /* TUOTERYHMÄ */
 
+
+
 CREATE TABLE tuoteryhma (
 trnro SMALLINT,
 trnimi CHAR(30),
