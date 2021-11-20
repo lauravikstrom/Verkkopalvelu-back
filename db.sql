@@ -1,3 +1,4 @@
+/* TIETOKANNAN LUOMINEN */
 CREATE DATABASE projektitietokanta;
 
 USE projektitietokanta;
