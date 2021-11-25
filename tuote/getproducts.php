@@ -11,7 +11,7 @@ $category_id = $parameters[1];
 
 try {
     $db = openDB();
-    selectAsJson($db,"select * from tuote where trnro = $category_id");
+    selectAsJson($db,"select * from product where category_id  = $category_id");
 }
 catch (PDOException $pdoex) {
     returnError($pdoex);

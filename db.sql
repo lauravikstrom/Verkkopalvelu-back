@@ -4,7 +4,29 @@ CREATE DATABASE projektitietokanta;
 USE projektitietokanta;
 
 /* TUOTERYHMÄ */
+CREATE TABLE category (
+id int primary key auto_increment,
+name varchar(50) not null
+);
+insert into category(name) value ('Piirrustukset');
+insert into category(name) value ('Maalaukset');
+insert into category(name) value ('Valokuvat');
+insert into category(name) value ('Illustrointi');
+insert into category(name) value ('Tarvikkeet');
 
+CREATE TABLE product (
+id int primary key auto_increment, 
+name varchar(100) not null,
+price double (10,2) not null,
+image varchar(50),
+category_id int not null,
+index category_id(category_id),
+foreign key (category_id) references category(id)
+on delete restrict
+);
+
+insert into product (name, price,category_id) values ('testituote 1',10,1);
+insert into product (name, price,category_id) values ('testituote 2',20,1);
 
 
 CREATE TABLE tuoteryhma (
