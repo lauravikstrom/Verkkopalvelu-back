@@ -25,25 +25,25 @@ foreign key (category_id) references category(id)
 on delete restrict
 );
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus1',22,'Piirustus1.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus2',25,'Piirustus2.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kedon kukkia',22,'Piirustus1.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kasvien lehdet',25,'Piirustus2.png',1) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Joutsen kuutamossa',24,'Piirustus3.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus4',23,'Piirustus4.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus5',24,'Piirustus5.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus6',23,'Piirustus6.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus7',22,'Piirustus7.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus8',27,'Piirustus8.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus9',27,'Piirustus9.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus10',29,'Piirustus10.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus11',12,'Piirustus11.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus12',25,'Piirustus12.jpg',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus13',24,'Piirustus13.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus14',16,'Piirustus14.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus15',27,'Piirustus15.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus16',28,'Piirustus16.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus17',26,'Piirustus17.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus18',16,'Piirustus18.png',1) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Piirustus19',26,'Piirustus19.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kukkakimppu',23,'Piirustus4.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirrostiikeri',24,'Piirustus5.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Sydämelliset kissat',23,'Piirustus6.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Luonnon kosketus',22,'Piirustus7.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Lintu',27,'Piirustus8.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Papukaija',27,'Piirustus9.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Flamingo',29,'Piirustus10.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Mustavalkoiset kedon kukat',12,'Piirustus11.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Voikukat',25,'Piirustus12.jpg',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Mustavalkoiset linnut oksalla',24,'Piirustus13.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirrosvuohi',16,'Piirustus14.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirroslehmä',27,'Piirustus15.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirroskissa',28,'Piirustus16.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirroskoira',26,'Piirustus17.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirroshevonen',16,'Piirustus18.png',1) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirroslammas',26,'Piirustus19.png',1) ;
 
 INSERT INTO product (name, price,image,category_id) VALUES ('Maalaus1',24,'Maalaus1.png',2) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Maalaus2',24,'Maalaus2.png',2) ;
@@ -142,52 +142,56 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet7',24,'Ta
 INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet8',24,'Tarvikkeet8.jpg',5) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet9',24,'Tarvikkeet9.jpg',5) ;
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kehys1',14,'Tarvikkeet_Kehys1.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kehys2',14,'Tarvikkeet_Kehys2.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kehys3',17,'Tarvikkeet_Kehys3.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kehys4',14,'Tarvikkeet_Kehys4.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kehys5',15,'Tarvikkeet_Kehys5.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kehys6',15,'Tarvikkeet_Kehys6.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kehys7',14,'Tarvikkeet_Kehys7.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Musta puukehys',14,'Tarvikkeet_Kehys1.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Vaalea puukehys',14,'Tarvikkeet_Kehys2.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Koristeltu kehys',17,'Tarvikkeet_Kehys3.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Valkoinen puukehys',14,'Tarvikkeet_Kehys4.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Krominvärinen metallikehys',15,'Tarvikkeet_Kehys5.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Ruskea puukehys',15,'Tarvikkeet_Kehys6.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puukehys',14,'Tarvikkeet_Kehys7.png',5) ;
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna1',4,'Tarvikkeet_Kyna1.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna2',4,'Tarvikkeet_Kyna2.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna3',4,'Tarvikkeet_Kyna3.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna4',4,'Tarvikkeet_Kyna4.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna5',5,'Tarvikkeet_Kyna5.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna6',5,'Tarvikkeet_Kyna6.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna7',5,'Tarvikkeet_Kyna7.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna8',5,'Tarvikkeet_Kyna8.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna9',5,'Tarvikkeet_Kyna9.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Kyna10',5,'Tarvikkeet_Kyna10.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kuulakärkikynä sinisellä musteella',4,'Tarvikkeet_Kyna1.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Musta piirustustussi',4,'Tarvikkeet_Kyna2.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kuulakärkikynä mustalla musteella',4,'Tarvikkeet_Kyna3.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Musta kynä',4,'Tarvikkeet_Kyna4.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kalligrafiakynä ja kultainen muste',5,'Tarvikkeet_Kyna5.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit 10 kpl',5,'Tarvikkeet_Kyna6.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärikynäsetti',5,'Tarvikkeet_Kyna7.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Yliviivaustussi',5,'Tarvikkeet_Kyna8.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kuitukärkikynät',5,'Tarvikkeet_Kyna9.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kalligrafiatussi',5,'Tarvikkeet_Kyna10.png',5) ;
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike1',16,'Tarvikkeet_Maalaustarvike1.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike2',16,'Tarvikkeet_Maalaustarvike2.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike3',16,'Tarvikkeet_Maalaustarvike3.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike4',16,'Tarvikkeet_Maalaustarvike4.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike5',12,'Tarvikkeet_Maalaustarvike5.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike6',7,'Tarvikkeet_Maalaustarvike6.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike7',9,'Tarvikkeet_Maalaustarvike7.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike8',12,'Tarvikkeet_Maalaustarvike8.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike9',14,'Tarvikkeet_Maalaustarvike9.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike10',9,'Tarvikkeet_Maalaustarvike10.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maalaustarvike11',12,'Tarvikkeet_Maalaustarvike11.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puinen mallinukke, 15 cm',16,'Tarvikkeet_Maalaustarvike1.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puinen mallinukke, 20 cm',17,'Tarvikkeet_Maalaustarvike2.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puinen mallinukke, 25 cm',18,'Tarvikkeet_Maalaustarvike3.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puinen mallikäsi',16,'Tarvikkeet_Maalaustarvike4.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Maalauspohja telineellä',12,'Tarvikkeet_Maalaustarvike5.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Suojakäsineet',7,'Tarvikkeet_Maalaustarvike6.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kasvomaski',9,'Tarvikkeet_Maalaustarvike7.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Hengityssuojain',12,'Tarvikkeet_Maalaustarvike8.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Suojalasit',14,'Tarvikkeet_Maalaustarvike9.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Suuri maalipaletti',12,'Tarvikkeet_Maalaustarvike10.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Maalipaletti',9,'Tarvikkeet_Maalaustarvike11.png',5) ;
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maali1',11,'Tarvikkeet_Maali1.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maali2',13,'Tarvikkeet_Maali2.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Maali3',12,'Tarvikkeet_Maali3.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Valkoinen A4-paperi',11,'Tarvikkeet_Paperi1.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Ruskea A4-paperi',13,'Tarvikkeet_Paperi2.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Akvarelipaperi A3',12,'Tarvikkeet_Paperi3.png',5) ;
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Pensseli1',4,'Tarvikkeet_Pensseli1.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Pensseli2',4,'Tarvikkeet_Pensseli2.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Pensseli3',5,'Tarvikkeet_Pensseli3.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Pensseli4',6,'Tarvikkeet_Pensseli4.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Akryylivärit',11,'Tarvikkeet_Maali1.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Akvarellinapit',13,'Tarvikkeet_Maali2.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Akvarelliväri',12,'Tarvikkeet_Maali3.png',5) ;
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Piirustustarvike1',5,'Tarvikkeet_Piirustustarvike1.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Piirustustarvike2',6,'Tarvikkeet_Piirustustarvike2.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Piirustustarvike3',7,'Tarvikkeet_Piirustustarvike3.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Piirustustarvike4',6,'Tarvikkeet_Piirustustarvike4.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Piirustustarvike5',8,'Tarvikkeet_Piirustustarvike5.png',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet_Piirustustarvike6',6,'Tarvikkeet_Piirustustarvike6.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Pyöreä keinokuitusivellin',4,'Tarvikkeet_Pensseli1.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Pieni keinokuitusivellin',4,'Tarvikkeet_Pensseli2.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Keinokuitusivellinsetti, 15 erilaista sivellintä',5,'Tarvikkeet_Pensseli3.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Suuri keinokuitusivellin',6,'Tarvikkeet_Pensseli4.png',5) ;
+
+INSERT INTO product (name, price,image,category_id) VALUES ('Viivotin',5,'Tarvikkeet_Piirustustarvike1.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kuviopiirtotyökalu',6,'Tarvikkeet_Piirustustarvike2.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Piirtokynäsetti suojapenaalin',7,'Tarvikkeet_Piirustustarvike3.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojapenaalilla',6,'Tarvikkeet_Piirustustarvike4.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojakankaalla',8,'Tarvikkeet_Piirustustarvike5.png',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Harppi',6,'Tarvikkeet_Piirustustarvike6.png',5) ;
 
 /* ASIAKAS */
 
