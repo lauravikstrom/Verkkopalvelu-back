@@ -5,172 +5,192 @@ USE projektitietokanta;
 
 /* TUOTERYHMÄ */
 CREATE TABLE category (
-id int primary key auto_increment,
-name varchar(50) not null
+id INT PRIMARY KEY auto_increment,
+NAME VARCHAR(50) NOT NULL
 );
-insert into category(name) value ('Piirrustukset');
-insert into category(name) value ('Maalaukset');
-insert into category(name) value ('Valokuvat');
-insert into category(name) value ('Illustrointi');
-insert into category(name) value ('Tarvikkeet');
+
+INSERT INTO category(name) VALUE ('Piirrustukset');
+INSERT INTO category(name) VALUE ('Maalaukset');
+INSERT INTO category(name) VALUE ('Valokuvat');
+INSERT INTO category(name) VALUE ('Illustrointi');
+INSERT INTO category(name) VALUE ('Tarvikkeet');
+INSERT INTO category(name) VALUE ('Suositut');
+INSERT INTO category(name) VALUE ('Tarjoukset');
 
 CREATE TABLE product (
-id int primary key auto_increment, 
-name varchar(100) not null,
-price double (10,2) not null,
-image varchar(50),
-category_id int not null,
-index category_id(category_id),
-foreign key (category_id) references category(id)
-on delete restrict
+id INT PRIMARY KEY auto_increment, 
+NAME VARCHAR(100) NOT NULL,
+price double (10,2) NOT NULL,
+IMAGE VARCHAR(50),
+category_id INT NOT NULL,
+INDEX category_id(category_id),
+FOREIGN KEY (category_id) REFERENCES category(id)
+ON DELETE restrict
 );
 
-insert into product (name, price,category_id) values ('testituote 1',10,1);
-insert into product (name, price,category_id) values ('testituote 2',20,1);
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus1',22,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus2',25,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus3',24,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus4',23,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus5',24,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus6',23,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus7',22,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus8',27,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus9',27,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus10',29,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus11',12,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus12',25,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus13',24,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus14',16,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus15',27,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus16',28,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus17',26,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus18',16,1) ;
+INSERT INTO product (name, price,category_id) VALUES ('Piirustus19',26,1) ;
 
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus1',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus2',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus3',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus4',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus5',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus6',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus7',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus8',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus9',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus10',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus11',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus12',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus13',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus14',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus15',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus16',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus17',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus18',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus19',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus20',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus21',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus22',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus23',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus24',24,2) ;
+INSERT INTO product (name, price,category_id) VALUES ('Maalaus25',24,2) ;
 
-CREATE TABLE tuoteryhma (
-trnro SMALLINT,
-trnimi CHAR(30),
-CONSTRAINT tuoteryhma_pk PRIMARY KEY (trnro)
-) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva1',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva2',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva3',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva4',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva5',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva6',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva7',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva8',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva9',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva10',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva11',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva12',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva13',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva14',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva15',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva16',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva17',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva18',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva19',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva20',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva21',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva22',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva23',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva24',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva25',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva26',24,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva27',25,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva28',22,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva29',31,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva30',23,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva31',16,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva32',26,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva33',26,3) ;
+INSERT INTO product (name, price,category_id) VALUES ('Valokuva34',12,3) ;
 
-INSERT INTO tuoteryhma VALUES (11,'Piirrustukset');
-INSERT INTO tuoteryhma VALUES (12,'Maalaukset');
-INSERT INTO tuoteryhma VALUES (13,'Valokuvat');
-INSERT INTO tuoteryhma VALUES (14,'Illustrointi');
-INSERT INTO tuoteryhma VALUES (15,'Tarvikkeet');
-INSERT INTO tuoteryhma VALUES (16,'Suositut');
-INSERT INTO tuoteryhma VALUES (17,'Tarjoukset');
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi1',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi2',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi3',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi4',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi5',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi6',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi7',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi8',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi9',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi10',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi11',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi12',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi13',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi14',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi15',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi16',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi17',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi18',24.,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi19',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi20',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi21',24,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi22',26,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi23',16,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi24',26,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi25',26,4) ;
 
-/* TUOTE */
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet1',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet2',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet3',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet4',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet5',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet6',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet7',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet8',24,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet9',24,5) ;
 
-CREATE TABLE tuote (
-tuotenro INTEGER,
-tuotenimi CHAR(25) NOT NULL,
-hinta DECIMAL(5,2),
-kustannus DECIMAL(5,2), 
-trnro SMALLINT NOT NULL,
-CONSTRAINT tuote_pk PRIMARY KEY (tuotenro),
-CONSTRAINT tuotenimi_un UNIQUE (tuotenimi),
-CONSTRAINT tuote_ryhma_fk FOREIGN KEY (trnro) 
-           REFERENCES tuoteryhma (trnro)
-) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kehys1',14,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kehys2',14,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kehys3',17,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kehys4',14,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kehys5',15,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kehys6',15,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kehys7',14,5) ;
 
-INSERT INTO tuote VALUES (1,'Leijona',25.00,6.00,13) ;
-INSERT INTO tuote VALUES (2,'Kissa',28.00,14.50,11) ;
-INSERT INTO tuote VALUES (3,'Lehmä',27.00,19.60,11) ;
-INSERT INTO tuote VALUES (4,'Koira',26.00,12.30,11) ;
-INSERT INTO tuote VALUES (5,'Elefantti',22.00,7.40,13) ;
-INSERT INTO tuote VALUES (6,'Elefantti2',31.00,24.85,13) ;
-INSERT INTO tuote VALUES (7,'Elefantti3',23.00,NULL,13) ;
-INSERT INTO tuote VALUES (8,'Metsä',16.00,3.80,14) ;
-INSERT INTO tuote VALUES (9,'Vuohi',16.00,3.80,11) ;
-INSERT INTO tuote VALUES (10,'Hevonen',16.00,3.80,11) ;
-INSERT INTO tuote VALUES (11,'Hevonen2',16.00,3.80,13) ;
-INSERT INTO tuote VALUES (12,'Järvi',26.00,5.80,14) ;
-INSERT INTO tuote VALUES (13,'Vuoret',26.00,5.80,14) ;
-INSERT INTO tuote VALUES (14,'Pöllö',26.00,5.80,13) ;
-INSERT INTO tuote VALUES (15,'Lammas',26.00,5.80,11) ;
-INSERT INTO tuote VALUES (16,'Joutsen',26.00,5.80,13) ;
-INSERT INTO tuote VALUES (17,'Puut',26.00,5.80,14) ;
-INSERT INTO tuote VALUES (18,'Kilpikonna',12.00,5.80,13) ;
-INSERT INTO tuote VALUES (19,'Piirustus1',22.00,5.80,11) ;
-INSERT INTO tuote VALUES (20,'Piirustus2',25.00,5.80,11) ;
-INSERT INTO tuote VALUES (21,'Piirustus3',24.00,5.80,11) ;
-INSERT INTO tuote VALUES (22,'Piirustus4',23.00,5.80,11) ;
-INSERT INTO tuote VALUES (23,'Piirustus5',24.00,5.80,11) ;
-INSERT INTO tuote VALUES (24,'Piirustus6',23.00,5.80,11) ;
-INSERT INTO tuote VALUES (25,'Piirustus7',22.00,5.80,11) ;
-INSERT INTO tuote VALUES (26,'Piirustus8',27.00,5.80,11) ;
-INSERT INTO tuote VALUES (27,'Piirustus9',27.00,5.80,11) ;
-INSERT INTO tuote VALUES (28,'Piirustus10',29.00,5.80,11) ;
-INSERT INTO tuote VALUES (29,'Piirustus11',12.00,5.80,11) ;
-INSERT INTO tuote VALUES (30,'Piirustus12',25.00,5.80,11) ;
-INSERT INTO tuote VALUES (31,'Piirustus13',24.00,5.80,11) ;
-INSERT INTO tuote VALUES (32,'Valokuva1',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (33,'Valokuva2',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (34,'Valokuva3',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (35,'Valokuva4',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (36,'Valokuva5',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (37,'Valokuva6',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (38,'Valokuva7',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (39,'Valokuva8',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (40,'Valokuva9',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (41,'Valokuva10',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (42,'Valokuva11',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (43,'Valokuva12',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (44,'Valokuva13',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (45,'Valokuva14',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (46,'Valokuva15',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (47,'Valokuva16',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (48,'Valokuva17',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (49,'Valokuva18',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (50,'Valokuva19',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (51,'Valokuva20',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (52,'Valokuva21',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (53,'Valokuva22',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (54,'Valokuva23',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (55,'Valokuva24',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (56,'Valokuva25',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (57,'Valokuva26',24.00,5.80,13) ;
-INSERT INTO tuote VALUES (58,'Tarvikkeet1',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (59,'Tarvikkeet2',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (60,'Tarvikkeet3',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (61,'Tarvikkeet4',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (62,'Tarvikkeet5',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (63,'Tarvikkeet6',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (64,'Tarvikkeet7',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (65,'Tarvikkeet8',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (66,'Tarvikkeet9',24.00,5.80,15) ;
-INSERT INTO tuote VALUES (67,'Illustrointi1',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (68,'Illustrointi2',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (69,'Illustrointi3',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (70,'Illustrointi4',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (71,'Illustrointi5',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (72,'Illustrointi6',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (73,'Illustrointi7',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (74,'Illustrointi8',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (75,'Illustrointi9',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (76,'Illustrointi10',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (77,'Illustrointi11',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (78,'Illustrointi12',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (79,'Illustrointi13',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (80,'Illustrointi14',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (81,'Illustrointi15',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (82,'Illustrointi16',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (83,'Illustrointi17',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (84,'Illustrointi18',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (85,'Illustrointi19',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (86,'Illustrointi20',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (87,'Illustrointi21',24.00,5.80,14) ;
-INSERT INTO tuote VALUES (88,'Maalaus1',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (89,'Maalaus2',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (90,'Maalaus3',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (91,'Maalaus4',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (92,'Maalaus5',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (93,'Maalaus6',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (94,'Maalaus7',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (95,'Maalaus8',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (96,'Maalaus9',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (97,'Maalaus10',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (98,'Maalaus11',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (99,'Maalaus12',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (100,'Maalaus13',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (101,'Maalaus14',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (102,'Maalaus15',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (103,'Maalaus16',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (104,'Maalaus17',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (105,'Maalaus18',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (106,'Maalaus19',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (107,'Maalaus20',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (108,'Maalaus21',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (109,'Maalaus22',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (110,'Maalaus23',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (111,'Maalaus24',24.00,5.80,12) ;
-INSERT INTO tuote VALUES (112,'Maalaus25',24.00,5.80,12) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna1',4,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna2',4,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna3',4,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna4',4,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna5',5,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna6',5,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna7',5,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna8',5,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna9',5,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Kyna10',5,5) ;
 
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike1',16,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike2',16,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike3',16,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike4',16,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike5',12,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike6',7,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike7',9,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike8',12,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike9',14,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike10',9,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike11',12,5) ;
 
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maali1',11,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maali2',13,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maali3',12.00,5) ;
+
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Pensseli1',4,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Pensseli2',4,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Pensseli3',5,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Pensseli4',6,5) ;
+
+INSERT INTO product (name, price,category_id) VALUES ('_Piirustustarvike1',5,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('_Piirustustarvike2',6,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('_Piirustustarvike3',7,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('_Piirustustarvike4',6,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('_Piirustustarvike5',8,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('_Piirustustarvike6',6,5) ;
 
 /* ASIAKAS */
 
@@ -203,9 +223,9 @@ CONSTRAINT tilaus_asiakas_fk FOREIGN KEY (astunnus)
 CREATE TABLE tilausrivi (
 tilausnro INTEGER NOT NULL,
 rivinro SMALLINT NOT NULL,
-tuotenro INTEGER, 
+id INTEGER, 
 kpl INTEGER,
 CONSTRAINT tilausrivi_pk PRIMARY KEY (tilausnro, rivinro),
-CONSTRAINT tilausrivi_tuote_fk FOREIGN KEY (tuotenro) 
-           REFERENCES tuote (tuotenro)
+CONSTRAINT tilausrivi_tuote_fk FOREIGN KEY (id) 
+           REFERENCES product (id)
 );
