@@ -5,27 +5,24 @@ USE projektitietokanta;
 
 /* TUOTERYHMÄ */
 CREATE TABLE category (
-id INT PRIMARY KEY auto_increment,
-NAME VARCHAR(50) NOT NULL
+id int primary key auto_increment,
+name varchar(50) not null
 );
-
-INSERT INTO category(name) VALUE ('Piirrustukset');
-INSERT INTO category(name) VALUE ('Maalaukset');
-INSERT INTO category(name) VALUE ('Valokuvat');
-INSERT INTO category(name) VALUE ('Illustrointi');
-INSERT INTO category(name) VALUE ('Tarvikkeet');
-INSERT INTO category(name) VALUE ('Suositut');
-INSERT INTO category(name) VALUE ('Tarjoukset');
+insert into category(name) value ('Piirrustukset');
+insert into category(name) value ('Maalaukset');
+insert into category(name) value ('Valokuvat');
+insert into category(name) value ('Illustrointi');
+insert into category(name) value ('Tarvikkeet');
 
 CREATE TABLE product (
-id INT PRIMARY KEY auto_increment, 
-NAME VARCHAR(100) NOT NULL,
-price double (10,2) NOT NULL,
-IMAGE VARCHAR(50),
-category_id INT NOT NULL,
-INDEX category_id(category_id),
-FOREIGN KEY (category_id) REFERENCES category(id)
-ON DELETE restrict
+id int primary key auto_increment, 
+name varchar(100) not null,
+price double (10,2) not null,
+image varchar(50),
+category_id int not null,
+index category_id(category_id),
+foreign key (category_id) references category(id)
+on delete restrict
 );
 
 INSERT INTO product (name, price,category_id) VALUES ('Piirustus1',22,1) ;
@@ -126,7 +123,7 @@ INSERT INTO product (name, price,category_id) VALUES ('Illustrointi14',24,4) ;
 INSERT INTO product (name, price,category_id) VALUES ('Illustrointi15',24,4) ;
 INSERT INTO product (name, price,category_id) VALUES ('Illustrointi16',24,4) ;
 INSERT INTO product (name, price,category_id) VALUES ('Illustrointi17',24,4) ;
-INSERT INTO product (name, price,category_id) VALUES ('Illustrointi18',24.,4) ;
+INSERT INTO product (name, price,category_id) VALUES ('Illustrointi18',24,4) ;
 INSERT INTO product (name, price,category_id) VALUES ('Illustrointi19',24,4) ;
 INSERT INTO product (name, price,category_id) VALUES ('Illustrointi20',24,4) ;
 INSERT INTO product (name, price,category_id) VALUES ('Illustrointi21',24,4) ;
@@ -178,7 +175,7 @@ INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maalaustarvike
 
 INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maali1',11,5) ;
 INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maali2',13,5) ;
-INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maali3',12.00,5) ;
+INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Maali3',12,5) ;
 
 INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Pensseli1',4,5) ;
 INSERT INTO product (name, price,category_id) VALUES ('Tarvikkeet_Pensseli2',4,5) ;
@@ -223,8 +220,8 @@ CONSTRAINT tilaus_asiakas_fk FOREIGN KEY (astunnus)
 CREATE TABLE tilausrivi (
 tilausnro INTEGER NOT NULL,
 rivinro SMALLINT NOT NULL,
-id INTEGER, 
-kpl INTEGER,
+tuotenro INTEGER, 
+id INTEGER,
 CONSTRAINT tilausrivi_pk PRIMARY KEY (tilausnro, rivinro),
 CONSTRAINT tilausrivi_tuote_fk FOREIGN KEY (id) 
            REFERENCES product (id)
