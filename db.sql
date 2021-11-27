@@ -132,15 +132,15 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Illustrointi23',16,
 INSERT INTO product (name, price,image,category_id) VALUES ('Illustrointi24',26,'Illustrointi24.png',4) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Illustrointi25',26,'Illustrointi25.png',4) ;
 
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet1',24,'Tarvikkeet1.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet2',24,'Tarvikkeet2.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet3',24,'Tarvikkeet3.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet4',24,'Tarvikkeet4.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet5',24,'Tarvikkeet5.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet6',24,'Tarvikkeet6.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet7',24,'Tarvikkeet7.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet8',24,'Tarvikkeet8.jpg',5) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Tarvikkeet9',24,'Tarvikkeet9.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Maalaustarvikesetti: paperit, maalit ja siveltimet',24,'Tarvikkeet1.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Siveltimiä ja maaleja',24,'Tarvikkeet2.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Keinokuitusivellinpaketti',24,'Tarvikkeet3.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Maalauspaketti: paperia, sivellin ja maalipaletti',24,'Tarvikkeet4.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Akvarellipaperi, siveltimiö ja akvarellimaalit',24,'Tarvikkeet5.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Keinokuitusivellinsetti',24,'Tarvikkeet6.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Suuri keinokuitusivellinsetti',24,'Tarvikkeet7.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Sivellinpaketti',24,'Tarvikkeet8.jpg',5) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Siveltimiä ja luonnosvihko',24,'Tarvikkeet9.jpg',5) ;
 
 INSERT INTO product (name, price,image,category_id) VALUES ('Musta puukehys',14,'Tarvikkeet_Kehys1.png',5) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Vaalea puukehys',14,'Tarvikkeet_Kehys2.png',5) ;
