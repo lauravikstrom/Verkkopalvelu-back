@@ -207,7 +207,7 @@ city varchar(30) not null
 
 /* TILAUS */
 
-CREATE TABLE 'order' (
+CREATE TABLE `order` (
 id int primary key auto_increment,
 order_date timestamp default current_timestamp,
 customer_id int not null,
@@ -221,7 +221,7 @@ on delete restrict
 CREATE TABLE order_row (
 order_id int not null,
 index order_id(order_id),
-foreign key (order_id) references 'order'(id)
+foreign key (order_id) references `order` (id)
 on delete restrict,
 product_id int not null,
 index product_id(product_id),
