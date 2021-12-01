@@ -23,7 +23,7 @@ function selectAsJson(object $db,string $sql): void {
 // Lisäys tietokantaan
 function executeInsert(object $db,string $sql): int {
     $query = $db->query($sql);
-    return $db->lastInsert();
+    return $db->lastInsertId();
 }
 
 //Virheenkäsittelyä
