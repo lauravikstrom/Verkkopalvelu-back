@@ -195,38 +195,36 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Harppi',6,'Tarvikke
 
 /* ASIAKAS */
 
-CREATE TABLE asiakas (
-astunnus CHAR(6),
-asnimi CHAR(25) NOT NULL,
-postinro CHAR(5), 
-postitmp CHAR(10), 
-asvuosi SMALLINT,
-CONSTRAINT asiakas_pk PRIMARY KEY (astunnus),
-CONSTRAINT asnimi_un UNIQUE (asnimi)
-) ;
+CREATE TABLE customer (
+id int primary key auto_increment,
+firstname varchar(50) not null,
+lastname varchar(50) not null,
+address varchar(50) not null,
+zip varchar(10) not null,
+city varchar(30) not null
+);
 
 
 /* TILAUS */
 
-CREATE TABLE tilaus (
-tilausnro INTEGER NOT NULL,
-astunnus CHAR(6) NOT NULL, 
-tilauspvm DATETIME NOT NULL, /* tämä muutettava käytettävän sql-tuotteen mukaan*/
-tila CHAR(1),
-CONSTRAINT tilaus_pk PRIMARY KEY (tilausnro),
-CONSTRAINT tilaus_asiakas_fk FOREIGN KEY (astunnus) 
-           REFERENCES asiakas (astunnus)
-) ; 
-
+CREATE TABLE 'order' (
+id int primary key auto_increment,
+order_date timestamp default current_timestamp,
+customer_id int not null,
+index customer_id(customer_id),
+foreign key (customer_id) references customer(id)
+on delete restrict
+);
 
 /* TILAUSRIVI */
 
-CREATE TABLE tilausrivi (
-tilausnro INTEGER NOT NULL,
-rivinro SMALLINT NOT NULL,
-tuotenro INTEGER, 
-id INTEGER,
-CONSTRAINT tilausrivi_pk PRIMARY KEY (tilausnro, rivinro),
-CONSTRAINT tilausrivi_tuote_fk FOREIGN KEY (id) 
-           REFERENCES product (id)
+CREATE TABLE order_row (
+order_id int not null,
+index order_id(order_id),
+foreign key (order_id) references 'order'(id)
+on delete restrict,
+product_id int not null,
+index product_id(product_id),
+foreign key (product_id) references product(id)
+on delete restrict
 );
