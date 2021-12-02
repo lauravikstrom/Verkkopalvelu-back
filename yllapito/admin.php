@@ -9,7 +9,7 @@ $db = null;
 
 try {
     $db = openDB();
-    $db = beginTransaction();
+    $db -> beginTransaction();
     //lisätään kategoria
     $sql = "insert into category (name) values
     ('" .
