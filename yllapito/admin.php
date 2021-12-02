@@ -20,7 +20,7 @@ $category_id = executeInsert($db,$sql);
 $db->commit();
 
 header('HTTP/1.1 200 OK');
-$data = array('id' => $customer_id);
+$data = array('id' => $category_id);
 echo json_encode($data);
 }
 catch ( PDOException $pdoex) {
