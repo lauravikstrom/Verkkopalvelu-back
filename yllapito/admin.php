@@ -27,4 +27,3 @@ catch ( PDOException $pdoex) {
     $db->rollback();
     returnError($pdoex);
 }
-
