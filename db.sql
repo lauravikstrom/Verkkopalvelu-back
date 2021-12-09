@@ -204,6 +204,9 @@ zip varchar(10) not null,
 city varchar(30) not null
 );
 
+INSERT INTO customer (id, firstname, lastname, address, zip, city) VALUES (1, 'Maija', 'Mehiläinen', 'Hunajakuja 12', '202020', 'Hunajakylä') ;
+INSERT INTO customer (id, firstname, lastname, address, zip, city) VALUES (2, 'Prinssi', 'Ali', 'Sulttaaninkatu 14', '000000', 'Agrabah') ;
+INSERT INTO customer (id, firstname, lastname, address, zip, city) VALUES (3, 'Ville', 'Vallaton', 'Jännätie 26', '00990', 'Helsinki') ;
 
 /* TILAUS */
 
@@ -215,6 +218,11 @@ index customer_id(customer_id),
 foreign key (customer_id) references customer(id)
 on delete restrict
 );
+
+INSERT INTO `order` (id, order_date, customer_id) VALUES (1, '2021-12-09 18:36:42', 1) ;
+INSERT INTO `order` (id, order_date, customer_id) VALUES (2, '2021-12-09 18:37:42', 2) ;
+INSERT INTO `order` (id, order_date, customer_id) VALUES (3, '2021-12-09 18:38:42', 3) ;
+
 
 /* TILAUSRIVI */
 
@@ -228,3 +236,15 @@ index product_id(product_id),
 foreign key (product_id) references product(id)
 on delete restrict
 );
+
+INSERT INTO order_row (order_id, product_id) VALUES (1, 99) ;
+INSERT INTO order_row (order_id, product_id) VALUES (1, 88) ;
+INSERT INTO order_row (order_id, product_id) VALUES (1, 59) ;
+
+INSERT INTO order_row (order_id, product_id) VALUES (2, 59) ;
+INSERT INTO order_row (order_id, product_id) VALUES (2, 69) ;
+INSERT INTO order_row (order_id, product_id) VALUES (2, 86) ;
+
+INSERT INTO order_row (order_id, product_id) VALUES (3, 59) ;
+INSERT INTO order_row (order_id, product_id) VALUES (3, 86) ;
+INSERT INTO order_row (order_id, product_id) VALUES (3, 69) ;
