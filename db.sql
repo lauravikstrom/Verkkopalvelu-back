@@ -85,7 +85,7 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Auringon säteet hu
 INSERT INTO product (name, price,image,category_id) VALUES ('Järvi talvisessa vuoristomaisemassa',24,'Valokuva12.jpg',3) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Puut saarella',24,'Valokuva13.jpg',3) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Veneet järvellä',24,'Valokuva14.jpg',3) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Kalliokiele vehreässä laaksossa',24,'Valokuva15.jpg',3) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Kalliokieleke vehreässä laaksossa',24,'Valokuva15.jpg',3) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Talvinen kylä vuoristossa',24,'Valokuva16.jpg',3) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Yöllinen kallion seinämä',24,'Valokuva17.jpg',3) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Talvinen vuorimaisema',24,'Valokuva18.jpg',3) ;
@@ -237,14 +237,6 @@ foreign key (product_id) references product(id)
 on delete restrict
 );
 
-INSERT INTO order_row (order_id, product_id) VALUES (1, 99) ;
-INSERT INTO order_row (order_id, product_id) VALUES (1, 88) ;
 INSERT INTO order_row (order_id, product_id) VALUES (1, 59) ;
-
-INSERT INTO order_row (order_id, product_id) VALUES (2, 59) ;
-INSERT INTO order_row (order_id, product_id) VALUES (2, 69) ;
 INSERT INTO order_row (order_id, product_id) VALUES (2, 86) ;
-
-INSERT INTO order_row (order_id, product_id) VALUES (3, 59) ;
-INSERT INTO order_row (order_id, product_id) VALUES (3, 86) ;
 INSERT INTO order_row (order_id, product_id) VALUES (3, 69) ;
