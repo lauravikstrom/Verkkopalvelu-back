@@ -237,14 +237,6 @@ foreign key (product_id) references product(id)
 on delete restrict
 );
 
-INSERT INTO order_row (order_id, product_id) VALUES (1, 99) ;
-INSERT INTO order_row (order_id, product_id) VALUES (1, 88) ;
 INSERT INTO order_row (order_id, product_id) VALUES (1, 59) ;
-
-INSERT INTO order_row (order_id, product_id) VALUES (2, 59) ;
-INSERT INTO order_row (order_id, product_id) VALUES (2, 69) ;
 INSERT INTO order_row (order_id, product_id) VALUES (2, 86) ;
-
-INSERT INTO order_row (order_id, product_id) VALUES (3, 59) ;
-INSERT INTO order_row (order_id, product_id) VALUES (3, 86) ;
 INSERT INTO order_row (order_id, product_id) VALUES (3, 69) ;
