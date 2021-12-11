@@ -3,6 +3,8 @@
 require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
+//Ylläpitäjä voi lisätä uusia tuotteita 
+
 // Luetaan tiedot JSON-muodossa
 $input = json_decode(file_get_contents('php://input'));
 $pname = filter_var($input->name,FILTER_SANITIZE_STRING);
