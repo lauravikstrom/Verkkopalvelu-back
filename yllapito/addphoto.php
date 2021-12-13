@@ -8,7 +8,7 @@ $target_file = $target_dir . basename($_FILES["File"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
-// Check if image file is a actual image or fake image
+// Tarkistaa, onko kuva oikea kuvatiedosto vai väärennös
 if(isset($_POST["submit"])) {
   $check = getimagesize($_FILES["File"]["tmp_name"]);
   if($check !== false) {
@@ -20,16 +20,16 @@ if(isset($_POST["submit"])) {
   }
 }
 
-// Check if file already exists
+// Tarkistaa, onko tiedosto jo olemassa
 if (file_exists($target_file)) {
   echo "Sorry, file already exists.";
   $uploadOk = 0;
 }
 
-// Check if $uploadOk is set to 0 by an error
+// Tarkistaa, onko $uploadOk asetettu olemaan 0 virheen vuoksi
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
-// if everything is ok, try to upload file
+// Jos kaikki ok, ladataan tiedosto
 } else {
   if (move_uploaded_file($_FILES["File"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["File"]["name"])). " has been uploaded.";
