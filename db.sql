@@ -52,7 +52,7 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Maailmankaikkeuden 
 INSERT INTO product (name, price,image,category_id) VALUES ('Punaiset vedokset',24,'Maalaus5.jpg',2) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Oranssien pisaroiden tanssi',24,'Maalaus6.png',2) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Keltaisia säikeitä',24,'Maalaus7.png',2) ;
-INSERT INTO product (name, price,image,category_id) VALUES ('Abstratia vaaleissa sävyissä',24,'Maalaus8.png',2) ;
+INSERT INTO product (name, price,image,category_id) VALUES ('Abstraktia vaaleissa sävyissä',24,'Maalaus8.png',2) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Tummia ja vaaleita säkeitä',24,'Maalaus9.png',2) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Tummaa pastellia',24,'Maalaus10.png',2) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Tiikerin katse',24,'Maalaus11.jpg',2) ;
