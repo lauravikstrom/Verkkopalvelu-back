@@ -193,6 +193,45 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojapena
 INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojakankaalla',8,'Tarvikkeet_Piirustustarvike5.png',5) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Harppi',6,'Tarvikkeet_Piirustustarvike6.png',5) ;
 
+ALTER TABLE product
+ADD description VARCHAR(500) 
+
+UPDATE product
+SET description = 'Yksinkertainen kaunis piirrustus, jossa on erilaisia kukkia valkoisella taustalla. Voit yhdistää tämän ajattoman kuvan kehyksiin tai käyttää sisustukseen sellaiseen. Piirrustuksen koko on 60x40 cm, materiaalina mattapaperi.'
+WHERE id = '1';
+
+UPDATE product
+SET description = 'Värikäs piirrustus, jossa on erivärisiä isoja lehtiä. Väreinä sininen, vihreä, punainen ja keltainen. Tuo elävyyttä sisustukseen ja sopii hyvin esimerkiksi keittiöön tai työhuoneeseen. Voit myös yhdistellä piirrustuksiamme kokonaisuudeksi. Tuotteen koko 70x100 cm, materiaalina mattapaperi'
+WHERE id = '2';
+
+UPDATE product
+SET description = 'Kuvassa on taustalla vihreitä vuoria kuun valossa ja sinertävä taivas, jossa on kirkkaan keltainen täysikuu. Kuun edessä lentää joutsen peittäen osan kuusta. Kuva on kokoa 50x50 cm, materiaalina mattapaperi'
+WHERE id = '3';
+
+UPDATE product
+SET description = 'Akryylimaaleilla maalattu taulu. Vallitseva väri on punainen ja violetti, muut värit oranssi ja sininen. Taulun koko 70 x 100 cm. '
+WHERE id = '20';
+
+UPDATE product
+SET description = 'Taianomainen taulu maalattuna akryylimaaleilla. Värikäs maalaus, sisältää kirkkaita värejä sekä kauniita pastellin sävyjä. Taulun koko 70 x 100 cm.'
+WHERE id = '21';
+
+UPDATE product
+SET description = 'Akryylimaaleilla maalattu syvällinen taulu. Syvän sininen mattaväri, josta erottuu vaaleita sekä kirkkaan vihreitä sävyjä. Taulun koko 70 x 100 cm. '
+WHERE id = '22'
+
+UPDATE product
+SET description = 'Kaunis valokuva veden ääreltä auringonnousun aikaan.  Vedessä puu, joka heijastuu veden peilipinnasta, kuten myös taivaan värit. Kuvassa on harmoninen tunnelma. Valokuvapaperi on kiiltopintainen ja kuvan koko on 30 x 21 cm.'
+WHERE id = '45';
+
+UPDATE product
+SET description = 'Henkeäsalpaava vuoristomaisema, joka heijastuu veden peilipinnasta upeasti. Valokuvassa on vahvat ja kirkkaat värit. Sininen taivas, jossa muutama hento valkoinen pilvi. Valokuvapaperi on kiiltopintainen ja kuvan koko on 30 x 21 cm.'
+WHERE id = '46';
+
+UPDATE product
+SET description = 'Valokuva järven jäältä auringonlaskun aikaan. Aurinko on kuvassa juuri laskemassa horisonttiin, mutta näkyy vielä kokonaan. Muutama ohut pilvi ja harmoniset värit taivaalla, jotka heijastuvat peilijäästä kauniisti. Keskellä järveä on muutama ihminen. Valokuvapaperi on kiiltopintainen ja kuvan koko on 30 x 21 cm.'
+WHERE id = '47'
+
 /* ASIAKAS */
 
 CREATE TABLE customer (
@@ -240,3 +279,4 @@ on delete restrict
 INSERT INTO order_row (order_id, product_id) VALUES (1, 59) ;
 INSERT INTO order_row (order_id, product_id) VALUES (2, 86) ;
 INSERT INTO order_row (order_id, product_id) VALUES (3, 69) ;
+
