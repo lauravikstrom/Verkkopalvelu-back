@@ -3,7 +3,7 @@
 require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
-// Hakee tilaukset jaoteltuna tilauksittain näkyviin front-puolelle
+// Hakee tilaukset jaoteltuna tilauksittain näkyviin front-puolelle. (Ylläpitäjänä haluan nähdä asiakkaan tilaamat tuotteet.)
 try {
     $db = openDB();
     selectAsJson($db, 'SELECT customer.id, customer.firstname, customer.lastname, product.id, product.name, product.image, product.price, order_row.order_id
