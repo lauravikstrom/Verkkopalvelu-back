@@ -14,6 +14,7 @@ insert into category(name) value ('Valokuvat');
 insert into category(name) value ('Illustrointi');
 insert into category(name) value ('Tarvikkeet');
 
+/* TUOTE */
 CREATE TABLE product (
 id int primary key auto_increment, 
 name varchar(100) not null,
@@ -193,6 +194,7 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojapena
 INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojakankaalla',8,'Tarvikkeet_Piirustustarvike5.png',5) ;
 INSERT INTO product (name, price,image,category_id) VALUES ('Harppi',6,'Tarvikkeet_Piirustustarvike6.png',5) ;
 
+/* TUOTEKUVAUKSET */
 ALTER TABLE product
 ADD description VARCHAR(500) 
 
@@ -233,7 +235,6 @@ SET description = 'Valokuva järven jäältä auringonlaskun aikaan. Aurinko on 
 WHERE id = '47'
 
 /* ASIAKAS */
-
 CREATE TABLE customer (
 id int primary key auto_increment,
 firstname varchar(50) not null,
@@ -248,7 +249,6 @@ INSERT INTO customer (id, firstname, lastname, address, zip, city) VALUES (2, 'P
 INSERT INTO customer (id, firstname, lastname, address, zip, city) VALUES (3, 'Ville', 'Vallaton', 'Jännätie 26', '00990', 'Helsinki') ;
 
 /* TILAUS */
-
 CREATE TABLE `order` (
 id int primary key auto_increment,
 order_date timestamp default current_timestamp,
@@ -264,7 +264,6 @@ INSERT INTO `order` (id, order_date, customer_id) VALUES (3, '2021-12-09 18:38:4
 
 
 /* TILAUSRIVI */
-
 CREATE TABLE order_row (
 order_id int not null,
 index order_id(order_id),

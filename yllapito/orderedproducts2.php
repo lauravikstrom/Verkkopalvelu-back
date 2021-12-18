@@ -2,7 +2,7 @@
 require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
-// Haetaan tuote-taulusta tuotteet category_id:n perusteella
+// Haetaan tuote-taulusta tuotteet category_id:n perusteella. (Ylläpitäjänä haluan nähdä asiakkaan tilaamat tuotteet.)
 $uri = parse_url(filter_input(INPUT_SERVER, 'PATH_INFO'),PHP_URL_PATH);
 
 $parameters = explode('/',$uri);

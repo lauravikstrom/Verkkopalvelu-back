@@ -1,5 +1,6 @@
 <?php
 
+//Voidaan lisätä uusi tilaus
 require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
