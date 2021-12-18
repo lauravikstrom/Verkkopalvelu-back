@@ -194,7 +194,7 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojakank
 INSERT INTO product (name, price,image,category_id) VALUES ('Harppi',6,'Tarvikkeet_Piirustustarvike6.png',5) ;
 
 ALTER TABLE product
-ADD description VARCHAR(500) 
+ADD description VARCHAR(500);
 
 UPDATE product
 SET description = 'Yksinkertainen kaunis piirrustus, jossa on erilaisia kukkia valkoisella taustalla. Voit yhdistää tämän ajattoman kuvan kehyksiin tai käyttää sisustukseen sellaiseen. Piirrustuksen koko on 60x40 cm, materiaalina mattapaperi.'
@@ -218,7 +218,7 @@ WHERE id = '21';
 
 UPDATE product
 SET description = 'Akryylimaaleilla maalattu syvällinen taulu. Syvän sininen mattaväri, josta erottuu vaaleita sekä kirkkaan vihreitä sävyjä. Taulun koko 70 x 100 cm. '
-WHERE id = '22'
+WHERE id = '22';
 
 UPDATE product
 SET description = 'Kaunis valokuva veden ääreltä auringonnousun aikaan.  Vedessä puu, joka heijastuu veden peilipinnasta, kuten myös taivaan värit. Kuvassa on harmoninen tunnelma. Valokuvapaperi on kiiltopintainen ja kuvan koko on 30 x 21 cm.'
@@ -230,7 +230,7 @@ WHERE id = '46';
 
 UPDATE product
 SET description = 'Valokuva järven jäältä auringonlaskun aikaan. Aurinko on kuvassa juuri laskemassa horisonttiin, mutta näkyy vielä kokonaan. Muutama ohut pilvi ja harmoniset värit taivaalla, jotka heijastuvat peilijäästä kauniisti. Keskellä järveä on muutama ihminen. Valokuvapaperi on kiiltopintainen ja kuvan koko on 30 x 21 cm.'
-WHERE id = '47'
+WHERE id = '47';
 
 /* ASIAKAS */
 
