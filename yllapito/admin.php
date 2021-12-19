@@ -17,6 +17,7 @@ try {
     filter_var($newcategory,FILTER_SANITIZE_STRING)
 
 .    "')";
+
 $category_id = executeInsert($db,$sql);
 $db->commit();
 
