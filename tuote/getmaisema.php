@@ -2,7 +2,7 @@
 require_once '../inc/functions.php';
 require_once '../inc/headers.php';
 
-// Palauttaa suositut tuotteet fronttiin
+// Palauttaa maisema-tuotteet fronttiin
 
 try {
     $db = openDB();
