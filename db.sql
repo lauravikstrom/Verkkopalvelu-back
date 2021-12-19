@@ -218,7 +218,7 @@ WHERE id = '21';
 
 UPDATE product
 SET description = 'Akryylimaaleilla maalattu syvällinen taulu. Syvän sininen mattaväri, josta erottuu vaaleita sekä kirkkaan vihreitä sävyjä. Taulun koko 70 x 100 cm. '
-WHERE id = '22'
+WHERE id = '22';
 
 UPDATE product
 SET description = 'Kaunis valokuva veden ääreltä auringonnousun aikaan.  Vedessä puu, joka heijastuu veden peilipinnasta, kuten myös taivaan värit. Kuvassa on harmoninen tunnelma. Valokuvapaperi on kiiltopintainen ja kuvan koko on 30 x 21 cm.'
@@ -230,7 +230,31 @@ WHERE id = '46';
 
 UPDATE product
 SET description = 'Valokuva järven jäältä auringonlaskun aikaan. Aurinko on kuvassa juuri laskemassa horisonttiin, mutta näkyy vielä kokonaan. Muutama ohut pilvi ja harmoniset värit taivaalla, jotka heijastuvat peilijäästä kauniisti. Keskellä järveä on muutama ihminen. Valokuvapaperi on kiiltopintainen ja kuvan koko on 30 x 21 cm.'
-WHERE id = '47'
+WHERE id = '47';
+
+UPDATE product
+SET description = 'Tumman puhuva kuva. Maisema yöltä, jossa taustalla loistaa täysikuu oranssina. Maisemassa reunoilla puita ja keskellä virtaa joki vuoristojen välissä. Myös kuvan taustalla näkyy vuoriston siluetti. Puut ja kuvan etuala ovat tummat, kuu valaisee maisemaan hieman violettia sävyä ja taivaanranta näkyy oranssina. Kuvan koko 100x60 cm. '
+WHERE id = '79';
+
+UPDATE product
+SET description = 'Kuvassa harmaansininen yö taivas, jota valaisee kuunsirppi. Tummat puut varjoina kuvan reunoissa ja etureunassa maa on tumma. Kuvan keskellä ihmisiä kauempana, keskimmäisenä puistonpenkillä ihminen, jolta lähtee naru kuuhun, kuin pitäisi ilmapalloa kädessä. Kuvan koko 70x90 cm'
+WHERE id = '80';
+
+UPDATE product
+SET description = 'Pirteä yö maisema. Tummia puita etualalla, taustalla punertavana hohkaava vuorimaisema ja laakso. Vuorien välistä nousemassa keltainen aurinko, joka on puoliksi näkyvissä. Kuvan koko 100x60 cm'
+WHERE id = '81';
+
+UPDATE product
+SET description = 'Maalaustarvikesetti, joka sopii niin aloittelevalle harrastajalle kuin kokeneemalle maalaajalle. Setti sisältää 5kpl laadukasta maalauspaperia, kaksi erilaista sivellintä sekä 5kpl eri väristä maalia, joista pystyt sekoittamaan kätevästi haluamasi sävyt. '
+WHERE id = '104';
+
+UPDATE product
+SET description = 'Paketti sisältää kolme erilaista sivellintä ja neljä maalituubia: kaksi ruskeaa, kaksi keltaista, valkoinen, punainen, sininen ja musta. '
+WHERE id = '105';
+
+UPDATE product
+SET description = 'Keinokuitusivellinpaketti, josta saat kaikki tarvitsemasi siveltimet. Tämä 15kpl sivellinpaketin lisäksi et tarvitse muuta kuin maalit ja paperin. Innokkaalle maalaajalle hyvä lahjaidea!'
+WHERE id = '106';
 
 /* ASIAKAS */
 
