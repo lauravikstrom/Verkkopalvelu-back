@@ -194,7 +194,7 @@ INSERT INTO product (name, price,image,category_id) VALUES ('Puuvärit suojakank
 INSERT INTO product (name, price,image,category_id) VALUES ('Harppi',6,'Tarvikkeet_Piirustustarvike6.png',5) ;
 
 ALTER TABLE product
-ADD description VARCHAR(500) 
+ADD description VARCHAR(500);
 
 UPDATE product
 SET description = 'Yksinkertainen kaunis piirrustus, jossa on erilaisia kukkia valkoisella taustalla. Voit yhdistää tämän ajattoman kuvan kehyksiin tai käyttää sisustukseen sellaiseen. Piirrustuksen koko on 60x40 cm, materiaalina mattapaperi.'
